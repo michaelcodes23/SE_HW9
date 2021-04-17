@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>View Your Drink!</title>
+</head>
+<style>
+    body {
+        margin: 0 auto;
+        text-align: center;
+        }
+    img{
+        width: 500px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <div class = "jumbotron container" >
+        <h1>At My Bar!</h1>
+        <h2><%=drinks.name%></h2>
+        </div>
+        <img class = "img-fluid" src="<%=drinks.image%>">
+        <br>
+        <h2>Price: <%=drinks.price%></h2>
+        <a class = "btn btn-primary btn-lg" href ="/drinks">Back to index</a>
+</body>
+</html>
